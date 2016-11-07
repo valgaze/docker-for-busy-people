@@ -1,0 +1,32 @@
+{
+  "name": "docker-for-busy-people",
+  "version": "1.0.0",
+  "description": "Docker quick-start for people with deadlines",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm i && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valgaze/docker-for-busy-people.git"
+  },
+  "keywords": [
+    "docker",
+    "tutorial",
+    "quick-start",
+    "coffee",
+    "busy",
+    "node",
+    "server"
+  ],
+  "author": "Victor Algaze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valgaze/docker-for-busy-people/issues"
+  },
+  "homepage": "https://github.com/valgaze/docker-for-busy-people#readme",
+  "dependencies": {
+    "node-uuid": "^1.4.7"
+  }
+}

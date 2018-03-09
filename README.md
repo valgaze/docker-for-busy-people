@@ -4,6 +4,11 @@ Bare minimum to become slightly dangerous
 Companion blog post & explanation here: https://medium.com/@valgaze/utility-post-docker-for-busy-people-fffde73bc59a#.hdd53k7ix
 
 
+## Docker Compose
+
+See the **[compose-example](compose-example)** directory for a simple example of using [Docker Compose](https://docs.docker.com/compose/overview/) to start two containers & share data from one to the other
+
+
 # tl;dr version:
 
 
@@ -24,20 +29,18 @@ $ docker build -t my_image .
 ```sh
 $ docker create --name my_container_1 -p 1234:8000 -v /Users/YOUR_ABSOLUTE_PATH/docker-for-busy-people:/usr/applicationSrc my_image
 ```
-
 ## Start my_container_1
 
 ```sh
 $ docker start my_container_1
 ```
-
 ## Check the logs
 
 ```sh
 $ docker logs my_container_1
 ```
 
-## Access on localhost:8000 or if you have docker-machine, use:
+## Access on http://localhost:8000 or if you have docker-machine, use:
 
 ```sh
 $ open http://$(docker-machine ip):1234
@@ -72,3 +75,6 @@ $ docker rm my_container_1 my_container_2
 ```sh
 $ docker rmi my_image
 ```
+
+
+
